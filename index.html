@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario de Compra</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <div class="container" id="formulario-compra">
+    <h2>Formulario de Compra</h2>
+
+    <label for="usuario">Nombre de Usuario</label>
+    <input type="text" id="usuario" placeholder="Ej: Carlos Martínez" />
+
+    <label for="producto">Producto Seleccionado</label>
+    <select id="producto">
+      <option>Selecciona un producto</option>
+      <option>Mouse Inalámbrico</option>
+      <option>Teclado Mecánico</option>
+      <option>Monitor 24''</option>
+      <option>Laptop Lenovo</option>
+    </select>
+
+    <label for="cantidad">Cantidad</label>
+    <input type="number" id="cantidad" min="1" max="10" value="1" />
+
+    <label for="acciones">Acción</label>
+    <select id="acciones">
+      <option>Agregar al carrito</option>
+      <option>Eliminar del carrito</option>
+      <option>Ver carrito</option>
+      <option>Confirmar compra</option>
+      <option>Cancelar compra</option>
+    </select>
+
+    <label for="comentarios">Comentarios o instrucciones adicionales</label>
+    <textarea
+      id="comentarios"
+      rows="3"
+      placeholder="Instrucciones especiales para el pedido..."
+    ></textarea>
+
+    <button id="btn-descargar">Imprimir y Descargar</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="java.js"></script>
+</body>
+</html>
